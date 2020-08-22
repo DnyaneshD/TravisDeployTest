@@ -6,7 +6,7 @@ const port = 5000;
 console.log("The application is running on ", port);
 
 app.get("/ping", async (req, res) => {
-  res.send("Test passed");
+  res.send("Test passed 123");
 });
 
 // start the Express server
