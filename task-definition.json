@@ -1,12 +1,11 @@
 {
-  "family": "",
-  "taskRoleArn": "",
-  "executionRoleArn": "",
+  "family": "test",
+  "executionRoleArn": "arn:aws:iam::148696713809:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
       "name": "sample-app",
-      "image": "",
+      "image": "148696713809.dkr.ecr.eu-central-1.amazonaws.com/travisdeploytest:45a8611b0f3a8b6f0c558e7a876efd0a3cac83f7",
       "repositoryCredentials": {
         "credentialsParameter": ""
       },
@@ -30,12 +29,6 @@
           "value": ""
         }
       ],
-      "environmentFiles": [
-        {
-          "value": "",
-          "type": "s3"
-        }
-      ],
       "mountPoints": [
         {
           "sourceVolume": "",
@@ -49,40 +42,10 @@
           "readOnly": true
         }
       ],
-      "linuxParameters": {
-        "capabilities": {
-          "add": [""],
-          "drop": [""]
-        },
-        "devices": [
-          {
-            "hostPath": "",
-            "containerPath": "",
-            "permissions": ["read"]
-          }
-        ],
-        "initProcessEnabled": true,
-        "sharedMemorySize": 0,
-        "tmpfs": [
-          {
-            "containerPath": "",
-            "size": 0,
-            "mountOptions": [""]
-          }
-        ],
-        "maxSwap": 0,
-        "swappiness": 0
-      },
       "secrets": [
         {
           "name": "",
           "valueFrom": ""
-        }
-      ],
-      "dependsOn": [
-        {
-          "containerName": "",
-          "condition": "COMPLETE"
         }
       ],
       "startTimeout": 0,
@@ -126,23 +89,10 @@
           }
         ]
       },
-      "healthCheck": {
-        "command": [""],
-        "interval": 0,
-        "timeout": 0,
-        "retries": 0,
-        "startPeriod": 0
-      },
       "systemControls": [
         {
           "namespace": "",
           "value": ""
-        }
-      ],
-      "resourceRequirements": [
-        {
-          "value": "",
-          "type": "InferenceAccelerator"
         }
       ],
       "firelensConfiguration": {
@@ -168,16 +118,6 @@
         },
         "labels": {
           "KeyName": ""
-        }
-      },
-      "efsVolumeConfiguration": {
-        "fileSystemId": "",
-        "rootDirectory": "",
-        "transitEncryption": "DISABLED",
-        "transitEncryptionPort": 0,
-        "authorizationConfig": {
-          "accessPointId": "",
-          "iam": "ENABLED"
         }
       },
       "fsxWindowsFileServerVolumeConfiguration": {
@@ -207,16 +147,6 @@
   ],
   "pidMode": "host",
   "ipcMode": "task",
-  "proxyConfiguration": {
-    "type": "APPMESH",
-    "containerName": "",
-    "properties": [
-      {
-        "name": "",
-        "value": ""
-      }
-    ]
-  },
   "inferenceAccelerators": [
     {
       "deviceName": "",
