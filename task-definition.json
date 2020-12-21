@@ -19,14 +19,10 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "KeyName": ""
-        },
-        "secretOptions": [
-          {
-            "name": "",
-            "valueFrom": ""
-          }
-        ]
+          "awslogs-group": "/ecs/test",
+          "awslogs-region": "eu-central-1",
+          "awslogs-stream-prefix": "ecs"
+        }
       }
     }
   ],
