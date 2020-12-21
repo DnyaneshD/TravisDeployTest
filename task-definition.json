@@ -104,20 +104,6 @@
     }
   ],
   "requiresCompatibilities": ["FARGATE"],
-  "cpu": "",
-  "memory": "",
-  "tags": [
-    {
-      "key": "",
-      "value": ""
-    }
-  ],
-  "pidMode": "host",
-  "ipcMode": "task",
-  "inferenceAccelerators": [
-    {
-      "deviceName": "",
-      "deviceType": ""
-    }
-  ]
+  "cpu": "1024",
+  "memory": "2048"
 }
