@@ -6,10 +6,7 @@
     {
       "name": "sample-app",
       "image": "148696713809.dkr.ecr.eu-central-1.amazonaws.com/travisdeploytest:45a8611b0f3a8b6f0c558e7a876efd0a3cac83f7",
-      "repositoryCredentials": {
-        "credentialsParameter": ""
-      },
-      "links": [""],
+      "cpu": "512",
       "portMappings": [
         {
           "containerPort": 8080,
@@ -18,62 +15,7 @@
         }
       ],
       "essential": true,
-      "entryPoint": [""],
-      "command": [""],
-      "environment": [
-        {
-          "name": "",
-          "value": ""
-        }
-      ],
-      "mountPoints": [
-        {
-          "sourceVolume": "",
-          "containerPath": "",
-          "readOnly": true
-        }
-      ],
-      "volumesFrom": [
-        {
-          "sourceContainer": "",
-          "readOnly": true
-        }
-      ],
-      "secrets": [
-        {
-          "name": "",
-          "valueFrom": ""
-        }
-      ],
-      "startTimeout": 0,
-      "stopTimeout": 0,
-      "hostname": "",
-      "user": "",
-      "workingDirectory": "",
-      "disableNetworking": true,
-      "privileged": true,
-      "readonlyRootFilesystem": true,
-      "dnsServers": [""],
-      "dnsSearchDomains": [""],
-      "extraHosts": [
-        {
-          "hostname": "",
-          "ipAddress": ""
-        }
-      ],
-      "dockerSecurityOptions": [""],
-      "interactive": true,
-      "pseudoTerminal": true,
-      "dockerLabels": {
-        "KeyName": ""
-      },
-      "ulimits": [
-        {
-          "name": "stack",
-          "softLimit": 0,
-          "hardLimit": 0
-        }
-      ],
+      "memory": "1024",
       "logConfiguration": {
         "logDriver": "journald",
         "options": {
@@ -85,18 +27,6 @@
             "valueFrom": ""
           }
         ]
-      },
-      "systemControls": [
-        {
-          "namespace": "",
-          "value": ""
-        }
-      ],
-      "firelensConfiguration": {
-        "type": "fluentbit",
-        "options": {
-          "KeyName": ""
-        }
       }
     }
   ],
