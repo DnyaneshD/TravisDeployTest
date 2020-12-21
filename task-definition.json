@@ -15,8 +15,8 @@
       "links": [""],
       "portMappings": [
         {
-          "containerPort": 0,
-          "hostPort": 0,
+          "containerPort": 8080,
+          "hostPort": 8080,
           "protocol": "udp"
         }
       ],
