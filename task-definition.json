@@ -9,9 +9,6 @@
       "repositoryCredentials": {
         "credentialsParameter": ""
       },
-      "cpu": 0,
-      "memory": 0,
-      "memoryReservation": 0,
       "links": [""],
       "portMappings": [
         {
@@ -103,5 +100,7 @@
       }
     }
   ],
-  "requiresCompatibilities": ["FARGATE"]
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048"
 }
