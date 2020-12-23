@@ -1,5 +1,5 @@
 {
-  "requiresCompatibilities": ["EC2"],
+  "requiresCompatibilities": ["FARGATE"],
   "inferenceAccelerators": [],
 
   "containerDefinitions": [
