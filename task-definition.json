@@ -34,7 +34,7 @@
     }
   ],
   "volumes": [],
-  "networkMode": null,
+  "networkMode": "awsvpc",
   "memory": null,
   "cpu": null,
   "placementConstraints": [],
