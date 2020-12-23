@@ -16,14 +16,7 @@
       ],
       "essential": true,
       "memory": "1024",
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "/ecs/test",
-          "awslogs-region": "eu-central-1",
-          "awslogs-stream-prefix": "ecs"
-        }
-      }
+      "logConfiguration": null
     }
   ],
   "requiresCompatibilities": ["FARGATE"],
