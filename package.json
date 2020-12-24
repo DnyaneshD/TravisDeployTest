@@ -1,22 +1,20 @@
 {
-  "name": "travisdeploytest",
+  "name": "next-uk-post-codes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DnyaneshD/TravisDeployTest.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DnyaneshD/TravisDeployTest/issues"
-  },
-  "homepage": "https://github.com/DnyaneshD/TravisDeployTest#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.19.2",
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

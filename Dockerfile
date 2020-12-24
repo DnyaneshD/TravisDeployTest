@@ -1,12 +1,17 @@
-FROM node:12.18.1
- 
-WORKDIR /app
- 
-COPY package.json package.json
-COPY package-lock.json package-lock.json
- 
+FROM node:10
+
+# Setting working directory. All the path will be relative to WORKDIR
+WORKDIR /usr/src/app
+
+# Installing dependencies
+COPY package*.json ./
 RUN npm install
- 
+
+# Copying source files
 COPY . .
- 
-CMD [ "node", "index.js" ]
+
+# Building app
+RUN npm run build
+
+# Running the app
+CMD [ "npm", "start" ]
