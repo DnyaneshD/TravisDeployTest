@@ -54,8 +54,8 @@ jobs:
         id: build-image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: travisdeploytest
-          IMAGE_TAG: ${{ github.sha }}
+          ECR_REPOSITORY: simple-app
+          IMAGE_TAG: latest
         run: |
           # Build a docker container and
           # push it to ECR so that it can
@@ -77,5 +77,5 @@ jobs:
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: sample-app-service
-          cluster: default
+          cluster: simple-app-cluster
           wait-for-service-stability: true
